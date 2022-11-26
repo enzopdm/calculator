@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="icon" href="./assets/icon/site-icon.png"/>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="calculator-container">
+    <h1>Calculator</h1>
+    <p class="result" id="result"></p>
+
+    <table>
+      <tr>
+        <td><button onclick="clean()">C</button></td>
+        <td><button onclick="backSpace()">
+          <span class="material-symbols-outlined">
+          backspace
+          </span>
+        </button></td>
+        <td><button onclick="insertNum('/')">÷</button></td>
+        <td><button onclick="insertNum('*')">&times;</button></td>
+      </tr>
+
+      <tr>
+        <td><button onclick="insertNum('7')">7</button></td>
+        <td><button onclick="insertNum('8')">8</button></td>
+        <td><button onclick="insertNum('9')">9</button></td>
+        <td><button onclick="insertNum('-')">-</button></td>
+      </tr>
+
+      <tr>
+        <td><button onclick="insertNum('4')">4</button></td>
+        <td><button onclick="insertNum('5')">5</button></td>
+        <td><button onclick="insertNum('6')">6</button></td>
+        <td><button onclick="insertNum('+')">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button onclick="insertNum('1')">1</button></td>
+        <td><button onclick="insertNum('2')">2</button></td>
+        <td><button onclick="insertNum('3')">3</button></td>
+        <td rowspan="2"><button onclick="calc()" style="height: 110px;">=</button></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><button onclick="insertNum('0')" style="width: 110px;">0</button></td>
+        <td><button onclick="insertNum('.')">.</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
